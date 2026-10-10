@@ -75,7 +75,6 @@
         #main-content {
             display: none;
             width: 100%;
-            display: flex;
             flex-direction: column;
             align-items: center;
         }
@@ -91,25 +90,31 @@
         .image-container {
             text-align: center;
             margin-bottom: 20px;
+            width: 100%;
         }
         .image-container img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #ff9933;
-            box-shadow: 0 4px 15px rgba(255,153,51,0.4);
+            width: 100%;
+            max-width: 1089px;
+            height: auto;
+            aspect-ratio: 1089 / 597;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 3px solid #ff9933;
+            box-shadow: 0 4px 15px rgba(255,153,51,0.3);
+            display: block;
+            margin: 0 auto;
         }
         .audio-container {
             text-align: center;
             margin-bottom: 20px;
             background: #2a2a2a;
-            padding: 12px;
+            padding: 15px;
             border-radius: 8px;
+            border: 1px solid #444;
         }
         .audio-container audio {
             width: 100%;
-            max-width: 400px;
+            max-width: 450px;
         }
         h1 {
             text-align: center;
@@ -181,87 +186,86 @@
     <!-- Main Webpage Content (Initially Hidden) -->
     <div id="main-content">
         <div class="container">
-            <div class="caption-banner">గణపతి పంచరత్నమ్[cite: 4]</div>
+            <div class="caption-banner">గణపతి పంచరత్నమ్</div>
             
-            <!-- Lord Ganesha Image Display -->
+            <!-- Lord Ganesha Image Display (1089x597 Rectangular Scale) -->
             <div class="image-container">
-                <img src="https://github.com/ktbabusuppalu/KTB-GANAPATHYPANCHA-RATNAM-TELUGU-VERSION/blob/main/TELUGUGP%20IMAGE%20PRINT.png?raw=true">
+                <img src="https://github.com/ktbabusuppalu/KTB-GANAPATHYPANCHA-RATNAM-TELUGU-VERSION/blob/main/TELUGUGP%20IMAGE%20PRINT.png?raw=true" alt="Ganapathy Pancharatnam Print">
             </div>
 
-            <!-- Audio Player for GitHub Repository -->
+            <!-- Audio Player connected via GitHub Raw Link -->
             <div class="audio-container">
-                <p style="margin: 0 0 8px 0; font-size: 0.9rem; color: #ffcc00;">పంచరత్న ఆడియో వినండి:</p>
-                <audio controls>
-                    <source src="TELUGU GANAPATHY PANCHARATNAM.mp3" type="audio/mpeg">
+                <p style="margin: 0 0 8px 0; font-size: 0.95rem; color: #ffcc00;">పంచరత్న ఆడియో వినండి:</p>
+                <audio controls preload="metadata">
+                    <source src="https://github.com/ktbabusuppalu/KTB-GANAPATHYPANCHA-RATNAM-TELUGU-VERSION/raw/main/TELUGU%20GANAPATHY%20PANCHARATNAM.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
 
-            <h1>శ్రీ గణేశ పంచరత్నమ్[cite: 4]</h1>
-            <div class="dedication">తెలుగు ప్రజలకు అంకితం[cite: 4]</div>
+            <h1>శ్రీ గణేశ పంచరత్నమ్</h1>
+            <div class="dedication">తెలుగు ప్రజలకు అంకితం</div>
 
             <!-- మొదటి పద్యం -->
             <div class="verse-box">
-                <div class="verse-title">మొదటి పద్యం[cite: 4]</div>
+                <div class="verse-title">మొదటి పద్యం</div>
                 <div class="verse-text">చేతిలో మోదకం చేరిన హస్తాన
 ముక్తిని ఇచ్చుచు మోదము నిచ్చునా!
-చంద్రకలాధర సజ్ಜನ రక్షಕ
-వినాయక నీపద వేడుకొనెదను![cite: 4]</div>
+చంద్రకలాధర సజ్ಜನ రక్షక
+వినాయక నీపద వేడుకొనెదను!</div>
             </div>
 
             <!-- రెండవ పద్యం -->
             <div class="verse-box">
-                <div class="verse-title">రెండవ పద్యం[cite: 4]</div>
+                <div class="verse-title">రెండవ పద్యం</div>
                 <div class="verse-text">అధర్మరుచులకు భయమును గొలుపుచు
 ఉదయసూర్యుని వలె ఉజ్జ్వలించు!
 విబుధ గణములకు విఘ్నుడై వెలుగుొందు
-మహేశని నిత్యము మనసున గొలుతును![cite: 4]</div>
+మహేశని నిత్యము మనసున గొలుతును!</div>
             </div>
 
             <!-- మూడవ పద్యం -->
             <div class="verse-box">
-                <div class="verse-title">మూడవ పద్యం[cite: 4]</div>
+                <div class="verse-title">మూడవ పద్యం</div>
                 <div class="verse-text">సమస్త లోకముల శాంతిని కోరుచు
 మదపుటేనుగుల వంటి రాక్షస మర్దనుడు!
 విశాల ఉదరుడై విమల గుణనిధియై
-ప్రకాశించు ఆ దేవుని ప్రార్థిుత్తును![cite: 4]</div>
+ప్రకాశించు ఆ దేవుని ప్రార్థిుత్తును!</div>
             </div>
 
             <!-- నాలుగవ పద్యం -->
             <div class="verse-box">
-                <div class="verse-title">నాలుగవ పద్యం[cite: 4]</div>
+                <div class="verse-title">నాలుగవ పద్యం</div>
                 <div class="verse-text">దీనుల ఆర్తులను దిగ్రోలు దేవుడు
 వేద శాస్త్రములకు వేద్యడైనవాడు!
 ఈశని తనయుడై ఇలవేల్పు గజముఖడు
-పాశముతో నిత్యము కొలుతును ముదమున![cite: 4]</div>
+పాశముతో నిత్యము కొలుతును ముదమున!</div>
             </div>
 
             <!-- ఐదవ పద్యం -->
             <div class="verse-box">
-                <div class="verse-title">ఐదవ పద్యం[cite: 4]</div>
+                <div class="verse-title">ఐదవ పద్యం</div>
                 <div class="verse-text">దంతకాంతి విరజిల్లు సుందర దేహియు
 అంతులేని రూపుడై ఆటంక హరుడు!
 యోగిపుంగవుల హృది ఎల్లప్పూడూ నిలిచి
-ఏకదస్తుని నిత్యము ధ్యానిిిత్తు నేను![cite: 4]</div>
+ఏకదస్తుని నిత్యము ధ్యానిిిత్తు నేను!</div>
             </div>
 
             <!-- ఆరవ పద్యం (ఫలశృతి) -->
             <div class="verse-box">
-                <div class="verse-title">ఆరవ పద్యం (ఫలశృతి)[cite: 4]</div>
+                <div class="verse-title">ఆరవ పద్యం (ఫలశృతి)</div>
                 <div class="verse-text">భక్తితోడ పంచరత్న పఠనము చేయుచు
 హృదిని గణేశ్వరుని నిత్యము తలచుచు!
 ఆరోగ్యము ఆయువును ఐశ్వర్య సంపదల్
-శీఘ్రముగను పొందుదురు సత్యముగ నినుచు![cite: 4]</div>
+శీఘ్రముగను పొందుదురు సత్యముగ నినుచు!</div>
             </div>
 
             <div class="footer">
-                చిత్తూరు తుషార్ వర్ధన్ మరియు నెల్లూరు పురుషోత్తమ్[cite: 4]
+                చిత్తూరు తుషార్ వర్ధన్ మరియు నెల్లూరు పురుషోత్తమ్
             </div>
         </div>
     </div>
 
     <script>
-        // Password is set to "Ganesha123"
         const correctPassword = "Ganesha123";
 
         function unlockPage() {
